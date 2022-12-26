@@ -1,0 +1,61 @@
+@import "../../assets/variables/color.scss";
+
+.title {
+  display: block;
+  font-size: 14px;
+  line-height: 24px;
+  color: $text;
+
+  @media screen and (min-width: 992px) {
+    font-size: calc(14px + 4 * (100vw / 1280));
+    line-height: calc(24px + 5.5 * (100vw / 1280));
+  }
+}
+
+.text {
+  display: block;
+  font-size: 14px;
+  line-height: 24px;
+
+  @media screen and (min-width: 992px) {
+    font-size: 16px;
+  }
+}
+
+.optionsItem {
+  width: 100%;
+  text-align: left;
+  padding: 16px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid $gray-light;
+  display: block;
+  background-color: transparent;
+
+  @media screen and (min-width: 992px) {
+    padding: 3% 5%;
+    cursor: pointer;
+  }
+
+  @media (min-width: 992px) and (max-height: 850px) {
+    padding: 12px 5%;
+  }
+}
+
+.optionsItem[disabled] > span {
+  color: $gray-dark;
+}
+
+.optionsItemActive {
+  background-color: $accent-diasable;
+  border-color: $accent-diasable;
+}
+
+.optionsItemActive[disabled] > span {
+  color: $text;
+}
+
+.optionsItemActive[disabled] > .title {
+  font-weight: 600;
+}

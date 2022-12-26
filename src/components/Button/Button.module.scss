@@ -1,0 +1,54 @@
+@import "../../assets/variables/color.scss";
+
+.button {
+  width: 100%;
+  padding: 14px 0;
+  background-color: $accent;
+  color: $text;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 24px;
+  text-align: center;
+  transition: all 0.4s;
+
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  width: calc(100% - 32px);
+
+  outline: none;
+  border: 0;
+
+  &[disabled] {
+    background-color: $accent-diasable;
+
+    &:hover {
+      background-color: $accent-diasable;
+      cursor: default;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    position: static;
+    max-width: 290px;
+    margin-top: 48px;
+
+    font-size: 20px;
+    line-height: 32px;
+    border-radius: 32px;
+  }
+
+  @media (min-width: 992px) and (max-height: 850px) {
+    font-size: 18px;
+    padding: 10px 0;
+  }
+}
+
+.button:hover,
+.button:active {
+  transition: all 0.4s;
+  background-color: $accent-hover;
+  cursor: pointer;
+}

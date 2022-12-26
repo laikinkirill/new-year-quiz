@@ -1,0 +1,14 @@
+@import "../../assets/variables/color.scss";
+
+.wrapperContainer {
+  @media screen and (min-width: 992px) {
+    padding: 4%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $white-bg;
+    gap: 16px;
+  }
+}

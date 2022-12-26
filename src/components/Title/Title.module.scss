@@ -1,0 +1,10 @@
+.title {
+  font-size: calc(19px + (14 + 16 * 0.7) * ((100vw - 320px) / 1280));
+  line-height: 32px;
+  font-weight: 600;
+
+  @media screen and (min-width: 992px) {
+    font-size: calc(19px + 14 * (100vw / 1280));
+    line-height: calc(35px + 14 * (100vw / 1280));
+  }
+}

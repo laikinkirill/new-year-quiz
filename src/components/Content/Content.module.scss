@@ -1,0 +1,33 @@
+@import "../../assets/variables/color.scss";
+
+.contentContainer {
+  position: absolute;
+  bottom: 0;
+  background-color: $white;
+  width: 100vw;
+  height: 60vh;
+  border-radius: 24px 24px 0 0;
+  padding: 24px 16px;
+
+  @media screen and (min-width: 992px) {
+    position: static;
+    width: 40vw;
+    height: 82vh;
+
+    display: flex;
+    align-items: center;
+    padding: 0 2%;
+  }
+}
+
+.ContentContainer::before {
+  content: "";
+  width: 32px;
+  height: 3px;
+  position: absolute;
+  left: 50%;
+  top: -7px;
+
+  background-color: rgba(33, 37, 41, 0.6);
+  border-radius: 4px;
+}
